@@ -1,7 +1,7 @@
 
     <?php
 
-    require "header.php"
+    require "includes/header.php"
 
      ?>
      <br>
@@ -34,5 +34,5 @@
 
      <?php
 
-     require "footer.php";
+     require "includes/footer.php";
       ?>

@@ -1,13 +1,13 @@
 
     <?php
 session_start();
-    require "header.php"
+    require "includes/header.php"
 
      ?>
      <br>
      <div class="wrapper">
        <?php
-       
+
        if (isset($_SESSION['userId'])) {
        	echo '<form action="includes/logout.inc.php" method="post">
           <button type="submit" name="logout-submit">Logout</button>
@@ -31,5 +31,5 @@ session_start();
 
      <?php
 
-     require "footer.php";
+     require "includes/footer.php";
       ?>

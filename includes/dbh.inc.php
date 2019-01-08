@@ -2,7 +2,7 @@
 $dbServer = "localhost";
 $dbUsername = "root";
 $dbPassword = "Dta2018!";
-$dbName = "loginsystem";
+$dbName = "dbmeteo";
 
 
 

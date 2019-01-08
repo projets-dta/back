@@ -1,7 +1,7 @@
 
 <?php
 
-require "header.php";
+require "includes/header.php";
 session_start();
 if (isset($_SESSION['userId'])) {
 	echo "<p>
@@ -134,6 +134,6 @@ else {
 
 	<?php
 
-	require "footer.php";
+	require "includes/footer.php";
 
 	 ?>
