@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Les balises meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Personaliser le style -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="icon" type="image/png" href="img2/favicon.png">
+
+    <style>
+
+        header {
+            color: #E7CCCC;
+        }
+        @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+        body {      
+        font-family: 'Quicksand', sans-serif;
+        position: relative;
+        }
+
+        /* utilities */
+
+        #connected {
+          color: white;
+          text-decoration: none;
+        }
+
+
+        .padding-150 {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        }
+
+
+        .bg-dark {
+        background: #212529;
+        }
+
+        .bg-cloud {
+        background: rgb(236, 240, 241);
+        }
+
+        .text-cloud {
+        color: rgb(236, 240, 241);
+        }
+
+        .text-dark {
+        color: #212529;
+        }
+
+        .h-100 {
+        height: 100px;
+        }
+
+        .h-250 {
+        height: 250px;
+        }
+
+        .paddingZero {
+        padding: 0;
+        }
+
+        .padding-10 {
+        padding: 10px;
+        }
+
+        .font-60 {
+        font-size: 60px;
+        }
+        .font-70 {
+        font-size: 70px;
+        }
+        .font-80 {
+        font-size: 80px;
+        }
+
+        /* navbar */
+        #navbar {
+        transition: all .5s;
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        }
+
+        .bg-clear {
+        background: transparent;
+        }
+
+
+        /* header */
+        .bg {
+        background: url('img/bois3.jpg') 20% 40%;
+        }
+
+        .bg-fixed {
+        background-attachment: fixed;
+        }
+
+
+        /* Les icones des réseaux sociaux - CSS animation */
+        section#contact a {
+        display: inline-block;
+        width: 128px;
+        height: 128px;
+        transition: all .5s;
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        }
+
+        a.fb {
+        background: url(img/social_media.png) -256px top;
+        }
+
+        a.tw {
+        background: url(img/social_media.png)  -512px top;
+        }
+
+        a.go {
+        background: url(img/social_media.png) -768px top;
+        }
+
+        a.ytube {
+        background: url(img/social_media.png) -640px top;
+        }
+
+        a.gh {
+        background: url(img/social_media.png) -0px top;
+        }
+
+        section#contact li:hover a.fb {
+        background: url(img/social_media.png) -256px bottom;
+        }
+
+        section#contact li:hover a.tw {
+        background: url(img/social_media.png) -512px bottom;
+        }
+
+        section#contact li:hover a.ytube {
+        background: url(img/social_media.png) -640px bottom;
+        }
+
+        section#contact li:hover a.go {
+        background: url(img/social_media.png) -768px bottom;
+        }
+
+        section#contact li:hover a.gh {
+        background: url(img/social_media.png) -0px bottom;
+        }
+
+    </style>
+
+  </head>
+  <body>
+
+  
+<div class="bg">
+   
+    <!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="http://localhost/todo"><i class="far fa-list-alt"></i> Listar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#illustration">Todolist <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">contact</a>
+      </li>
+      <li>
+          <a id="connect" href="#connect">&nbsp;<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#connexion" data-whatever="@getbootstrap">Connexion<!-- Open modal for @getbootstrap --></button>&nbsp;</a>
+
+          
+          <a id="inscript" href="#Inscript"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscription" data-whatever="@getbootstrap">Inscription<!-- Open modal for @getbootstrap --></button></a>
+      </li>
+      <li>
+          
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+<!-- modal de connexion -->
+
+<div class="modal fade" id="connexion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="container">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-white" style="background-color: #5F382C">
+        <h5 class="modal-title" id="exampleModalLabel"><strong></strong>Connectez-vous à votre compte Listar</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    <div class="modal-body"><br>
+        <form>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">             
+                </div>
+            </div>
+
+            <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div><br>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary"><a id="connected" href="todolist">Connexion</a></button>
+                </div>
+            </div></a>
+        </form>
+    </div>
+        <div class="container">
+            <div class="row ml-auto">
+                <div class="col-1"></div>
+                <div class="col-10 modal-footer ">
+                <p>Vous n'avez pas de compte ? <a href="#inscript">S’inscrire &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+                <div class="col-1"></div>
+            </div>
+        </div>
+              
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- fin de modal de connexion -->
+
+<!-- début de modal d'inscription -->
+<div class="modal fade" id="inscription" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-white" style="background-color: #5F382C">
+        <h5 class="modal-title" id="exampleModalLabel">Inscrivez-vous et ouvrez un compte Listar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Formulaire d'inscription -->
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Adresse Mail</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+              <label for="inputPassword4">Mot de passe</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Addresse</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="7 rue de la marne">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2">Addresse 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartement, studio...">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">Ville</label>
+          <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+          <label for="inputState">Pays</label>
+          <select id="inputState" class="form-control">
+            <option selected>France</option>
+            <option>Belgique</option>
+            <option>Suisse</option>
+            <option>Espagne</option>
+            <option>Portugal</option>
+            <option>Angleterre</option>
+            <option>...</option>
+        </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">zip</label>
+      <input type="text" class="form-control" id="inputZip">
+  </div>
+</div>
+
+<button type="submit" class="btn btn-primary">Inscription</button>
+</form>
+
+      </div>
+
+<!-- Fin du Formulaire d'inscription -->
+
+      <!-- <div class="col modal-footer text-center">
+        <p></p><br>
+        <p>Vous avez déjà un compte ? <a href="">Se connecter</a></p>
+      </div> -->
+        <div class="container">
+            <div class="row ml-auto">
+                <div class="col-md-1"></div>
+                <div class="col-md10 modal-footer">
+                <p>Vous avez déjà un compte ? <a href="#connexion">Connexion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+              
+        </div>
+    </div>
+  </div>
+</div>
+<!-- fin de modal d'inscription -->
+
+    <!-- en tête -->
+
+    <header id="home">
+
+        <div class="container padding-150">
+            <div class="row text-center">
+                <div class="col-md-12" style="color=white">
+                    
+
+                    <h1 class="font-80">Restez synchronisé <br> &amp; organisé</h1><hr>
+                    <p class="h2">Organisez vos listes de tâches, de travail, de courses, de films et de tâches ménagères. Peu importe ce que vous planifiez ou l’ampleur de la tâche, La TodoList vous permet de tout réaliser très facilement.</p>
+
+                </div> 
+            </div>
+        </div>
+        
+    </header>
+   
+</div>
+
+    <!-- illustration -->
+    <section id="illustration" class="bg-dark text-cloud">
+        <div class="container padding-150">
+            <div class="row text-center">
+                <div class="cl md-12">
+                    <h2 class="font-60">Passez de la conversation à l'action</h2>
+                    <hr><br>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <img src="img2/dev1.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="img2/dev2.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="img2/dev3.png" class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+   
+     <!-- services -->
+    <section id="services" class="bg-cloud text-dark">
+       <div class="container padding-150 text-center">
+           <h2 class="font-60">Compatibilité avec tous les supports</h2>
+           <hr><br>
+           <div class="row">
+               <div class="col">
+                    <i class="fas fa-mobile-alt fa-5x"></i><br><br>
+                    <p>Votre TodoList a été optimisé pour les téléphones mobile, pour vous permettre d'avoir un œil sur vos tâches en tous lieux.</p>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-tablet-alt fa-5x"></i><br><br>                 
+                    <p>La TodoList offre une très bonne compatibilité avec les tablettes de différentes résolutions.</p>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-laptop fa-5x"></i><br><br>
+                    <p>Comme pour une utilisation sur un environnement Desktop, vous pourrez accéder sur votre ordinateur portable à tous les avantages de votre TodoList</p>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-desktop fa-5x"></i><br><br>
+                    <p>La gestion de Votre TodoList sur un environement Desktop, est la façon la plus optimale qui soit, vous pourrez ainsi accéder à toutes ses fonctionnalités.</p>
+                </div>
+
+           </div>
+       </div>
+    </section>
+
+
+    <section id="showcase">
+        <h2 class="sr-only">carousel/gallerie</h2>
+       <!-- carousel -->
+       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img2/slide1.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="img2/slide2.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="img2/slide3.png" alt="Third slide">
+          </div>
+      </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-cloud text-dark">
+
+        <div class="container padding-150">
+
+            <!-- social media -->
+
+            <div class="row text-center">
+
+                <div class="col-md-12">
+                    <h2 class="font-60">Nous contacter</h2>
+                    <hr>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="tw" href="#"></a></li>
+                        <li class="list-inline-item"><a class="fb" href="#"></a></li>
+                        <li class="list-inline-item"><a class="go" href="#"></a></li>
+                        <li class="list-inline-item"><a class="ytube" href="#"></a></li>
+                        <li class="list-inline-item"><a class="gh" href="#"></a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <!-- Fin réseaux sociaux-->
+             </div>
+
+
+
+            <br><br>
+
+            
+            <!-- form -->
+
+             <div class="row justify-content-md-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Adresse Mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                            <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email avec  qui que ce soit</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="d-flex justify-content-md-center">
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                        
+                    </form>
+                </div>
+             </div>
+            
+        </div>
+            
+    </section>
+
+    <footer class="bg-dark text-cloud">
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p class="padding-10" style="padding-bottom: 0px; font-weight: bold;">&copy; DTA 2018-2019</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <!-- à ajouter pour le page scroll effect -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

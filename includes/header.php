@@ -15,6 +15,44 @@
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="http://localhost/todo"><i class="far fa-list-alt"></i> Listar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#illustration">Todolist <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">contact</a>
+      </li>
+      <li>
+          <a id="connect" href="#connect">&nbsp;<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#connexion" data-whatever="@getbootstrap">Connexion<!-- Open modal for @getbootstrap --></button>&nbsp;</a>
+
+          
+          <a id="inscript" href="#Inscript"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscription" data-whatever="@getbootstrap">Inscription<!-- Open modal for @getbootstrap --></button></a>
+      </li>
+      <li>
+          
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+
 	<!-- Navigation -->
 	<header>
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">

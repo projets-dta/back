@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<title>Notre TODO list</title>
+</head>
+<body>
+
+<!-- NavBar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#"><i class="far fa-list-alt"></i> Listar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost/todo/" style="color:#0059B8">Se déconnecter&nbsp;&nbsp;&nbsp;</a>
+      </li>
+      <li>
+        
+            <a href=""><i class="fas fa-user-circle fa-2x"></i>&nbsp;&nbsp;&nbsp;</a>
+        
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+<!-- Fin de la NavBar -->
+
+  <div class="contenant">
+    
+    <div class="row">
+      <div class="col-xl-9"></div>
+      <input type="text" name="nom">
+       <a href="deconnexion.php"><input type="button" value="Déco"></a>
+    </div>
+    <br><h2 class="titre">Listes des taches a accomplir</h2>
+    <div class="tableau">
+      
+  <div class="container">
+  <div class="row" id="case">
+    <div class="col-xl-3">
+     <form action="traitement.php" method="post">
+        <p>
+            <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+           <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+  
+       </p>
+      </form>
+    </div>
+     <div class="col-xl-3">
+      <p>
+     <label>Etat :</label><br />
+     <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row" id="case2">
+    <div class="col-xl-3" id="coin">
+     <form action="traitement.php" method="post">
+        <p>
+            <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+           <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+  
+       </p>
+      </form>
+    </div>
+     <div class="col-xl-3">
+      <p>
+     <label>Etat :</label><br />
+      <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" id="case3">
+    <div class="col-xl-3" id="coin">
+     <form action="traitement.php" method="post">
+        <p>
+           <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+            <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+
+      </form>
+    </div>
+    <div class="col-xl-3" id="coin2">
+      <p>
+     <label>Etat :</label><br />
+       <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+  <div class="container">
+  <div class="row" id="case4">
+    <div class="col-xl-3">
+      <form action="traitement.php" method="post">
+        <p>
+            <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+            <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+  
+       </p>
+      </form>
+    </div>
+    <div class="col-xl-3">
+      <p>
+     <label>Etat :</label><br />
+       <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" id="case5">
+    <div class="col-xl-3">
+      <form action="traitement.php" method="post">
+        <p>
+            <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+            <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+  
+       </p>
+      </form>
+    </div>
+    <div class="col-xl-3">
+      <p>
+     <label>Etat :</label><br />
+      <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" id="case6">
+    <div class="col-xl-3">
+      <form action="traitement.php" method="post">
+        <p>
+            <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+           <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+  
+       </p>
+      </form>
+    </div>
+     <div class="col-xl-3">
+      <p>
+     <label>Etat :</label><br />
+      <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" id="case7">
+    <div class="col-xl-3">
+      <form action="traitement.php" method="post">
+        <p>
+           <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+            <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+  
+       </p>
+      </form>
+    </div>
+     <div class="col-xl-3">
+      <p>
+     <label>Etat :</label><br />
+      <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" id="case8">
+    <div class="col-xl-3">
+     <form action="traitement.php" method="post">
+        <p>
+            <form>
+          <label for="id" >Nom de l'opérateur :</label>
+            <input type="text" list="nom" name="Nom">
+            <datalist id = "nom">
+              <option value="Faïçal">
+              <option value="Akid">
+              <option value="Nasser"></option>
+              </option>
+            </datalist>
+          </form>
+        </p>
+      </form>
+    </div>
+    <div class="col-xl">
+      <form action="traitement.php" method="post">
+        <p>
+           <label for="id">Action à réaliser et commentaires :</label><br>
+          <textarea class="marge" type="text" name="id" ></textarea>
+  
+       </p>
+      </form>
+    </div>
+     <div class="col-xl-3">
+      <p>
+     <label>Etat :</label><br />
+     <input type="radio" name="Etat">A faire
+     <input type="radio" name="Etat">En cours
+     <input   type="reset" value="terminer">
+   </p>
+    </div>
+  </div>
+</div>
+      
+    </div>
+    
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+

@@ -15,9 +15,11 @@ else {
 }
 
 ?>
+<br><br>
+<div id="cont_NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx"><div id="spa_NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx"><a id="a_NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx" href="http://www.meteocity.com/france/saint-etienne_v42218/" target="_blank" style="color:#333;text-decoration:none;">Météo Saint-Étienne</a> <a href="http://www.meteocity.com"></a></div><script type="text/javascript" src="http://widget.meteocity.com/js/NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx"></script></div>
 
 	<!--- Image Slider -->
-	<div id="slides" class="carousel slide col-12" data-ride="carousel">
+<!-- 	<div id="slides" class="carousel slide col-12" data-ride="carousel">
 		<ul class="carousel-indicators">
 			<li data-target="#slides" data-slide-to="0" class="active"></li>
 			<li data-target="#slides" data-slide-to="1"></li>
@@ -40,7 +42,7 @@ else {
 				<img src="img/w13.jpg">
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
 <!------Jumbotron------>
@@ -137,3 +139,4 @@ else {
 	require "includes/footer.php";
 
 	 ?>
+

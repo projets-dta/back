@@ -1,0 +1,104 @@
+.container{
+
+ ;
+	width: 400px;
+	margin-top: 50px;
+    
+   
+}
+.tableau{
+	
+	width: 70%;
+	background-color: #CCCCCC;
+	border-radius: 15px 15px 15px 15px;
+	margin: auto;
+	margin-top: 50px;
+}
+.col-xl{
+	
+	
+}
+
+.col-xl-3{
+	
+}
+.container{
+	margin-top: 0px;
+	
+	
+}
+.terminer{
+	margin-left: 5px;
+}
+h2{
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+
+	
+}
+.marge{
+	width: 420px;
+	height: 50px;
+}
+.action{
+	margin-left: 15px;
+	margin-top: 15px;
+}
+#deco{
+	background-position: right;
+}
+
+.contenant{
+	background-image: url("bois.jpg");
+	background-position: 0 0 0 0;
+	
+}
+.titre{
+	color: #000000;
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: bold;
+}
+#case1{
+	background-color:#CCCCCC;
+	border-radius: 15px 15px 0 0 ;
+	display: block;
+	
+}
+#case2, #case4, #case6{
+	background-color: #ECF0F1;
+
+}
+#case3, #case5, #case7{
+	background-color:#CCCCCC;
+}
+#case8{
+	background-color: #ECF0F1;
+	border
+	border-radius: 0 0 15px 15px;
+}
+
+}
+textarea {
+	display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+textarea {
+    max-width: 95%;
+}
+input{
+	display: block;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input{
+	max-width: 100%;
+}
+
+
