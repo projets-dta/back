@@ -100,7 +100,24 @@
       </div>
 
     <div class="modal-body"><br>
-        <form>
+    	<?php
+
+       if (isset($_SESSION['userId'])) {
+       	echo '<form action="includes/logout.inc.php" method="post">
+          <button type="submit" name="logout-submit">Logout</button>
+           </form>';
+       }
+       else {
+       	echo '<form action="includes/login.inc.php" method="post">
+        <input type="text" name="mailuid" placeholder="Username/E-mail">
+        <input type="password" name="pwd" placeholder="password">
+        <button type="submit" name="log-submit">Login</button>
+        </form>
+        <a href="signup.php">Signup</a>';
+       }
+
+        ?>
+        <!-- <form>
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
@@ -120,7 +137,7 @@
                     <button type="submit" class="btn btn-primary"><a id="connected" href="todolist">Connexion</a></button>
                 </div>
             </div></a>
-        </form>
+        </form> -->
     </div>
         <div class="container">
             <div class="row ml-auto">
