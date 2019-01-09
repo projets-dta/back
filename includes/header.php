@@ -152,50 +152,72 @@
       <div class="modal-body">
 
         <!-- Formulaire d'inscription -->
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Adresse Mail</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-          </div>
-          <div class="form-group col-md-6">
-              <label for="inputPassword4">Mot de passe</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-          </div>
-      </div>
-      <div class="form-group">
-        <label for="inputAddress">Addresse</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="7 rue de la marne">
-    </div>
-    <div class="form-group">
-        <label for="inputAddress2">Addresse 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartement, studio...">
-    </div>
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="inputCity">Ville</label>
-          <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="form-group col-md-4">
-          <label for="inputState">Pays</label>
-          <select id="inputState" class="form-control">
-            <option selected>France</option>
-            <option>Belgique</option>
-            <option>Suisse</option>
-            <option>Espagne</option>
-            <option>Portugal</option>
-            <option>Angleterre</option>
-            <option>...</option>
-        </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">zip</label>
-      <input type="text" class="form-control" id="inputZip">
-  </div>
-</div>
 
-<button type="submit" class="btn btn-primary">Inscription</button>
-</form>
+
+      <form  action="includes/signup.inc.php" method="post">
+       <input type="text" name="first" placeholder="Firstname">
+       <br>
+       <input type="text" name="last" placeholder="Lastname">
+       <br>
+       <input type="text" name="mail" placeholder="E-mail">
+       <br>
+       <input type="text" name="uid" placeholder="Username">
+       <br>
+       <input type="password" name="pwd" placeholder="Password">
+       <br>
+       <input type="password" name="pwd-repeat" placeholder="Repeat Password">
+       <br>
+       <button type="submit" name="signup-submit">Signup</button>
+
+      </form>
+     
+
+
+
+     
+        <!-- <form>
+        	<div class="form-row">
+        		<div class="form-group col-md-6">
+        			<label for="inputEmail4">Adresse Mail</label>
+        			<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        		</div>
+        		<div class="form-group col-md-6">
+        			<label for="inputPassword4">Mot de passe</label>
+        			<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<label for="inputAddress">Addresse</label>
+        		<input type="text" class="form-control" id="inputAddress" placeholder="7 rue de la marne">
+        	</div>
+        	<div class="form-group">
+        		<label for="inputAddress2">Addresse 2</label>
+        		<input type="text" class="form-control" id="inputAddress2" placeholder="Apartement, studio...">
+        	</div>
+        	<div class="form-row">
+        		<div class="form-group col-md-6">
+        			<label for="inputCity">Ville</label>
+        			<input type="text" class="form-control" id="inputCity">
+        		</div>
+        		<div class="form-group col-md-4">
+        			<label for="inputState">Pays</label>
+        			<select id="inputState" class="form-control">
+        				<option selected>France</option>
+        				<option>Belgique</option>
+        				<option>Suisse</option>
+        				<option>Espagne</option>
+        				<option>Portugal</option>
+        				<option>Angleterre</option>
+        				<option>...</option>
+        			</select>
+        		</div>
+        <div class="form-group col-md-2">
+        			<label for="inputZip">zip</label>
+        			<input type="text" class="form-control" id="inputZip">
+        </div>
+	</div>
+	<button type="submit" class="btn btn-primary">Inscription</button>
+</form> -->
 
       </div>
 
