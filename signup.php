@@ -1,7 +1,25 @@
 
+
+    <style>
+      
+      .section-defautl {
+        visibility: hidden;
+      }
+
+      .chargement_de_connexion {
+        font-size : 50px;
+        text-align: center;
+      }
+
+    </style>
+<br><br><br><br><br><br><br><br><br><br>
+<p class="chargement_de_connexion">Connexion en cours ...</p>
+
+<meta http-equiv="refresh" content="0; url=index.php" />
+
     <?php
 
-    require "includes/header.php"
+    require "header.php"
 
      ?>
      <br>
@@ -22,7 +40,7 @@
        <br>
        <input type="password" name="pwd-repeat" placeholder="Repeat Password">
        <br>
-       <button type="submit" name="signup-submit">Signup</button>
+       <button type="submit" name="signup-submit">Inscription</button>
 
       </form>
       </section>
@@ -34,5 +52,5 @@
 
      <?php
 
-     require "includes/footer.php";
+     require "footer.php";
       ?>

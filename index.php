@@ -1,25 +1,81 @@
 
 <?php
 
-require "includes/header.php";
-session_start();
-if (isset($_SESSION['userId'])) {
-	echo "<p>
-	You are logged in!
-	</p>";
-}
-else {
-	echo "<p>
-	You are logged out!
-	</p>";
-}
+require "header.php";
+// session_start();
+// if (isset($_SESSION['userId'])) {
+// 	echo "<p>
+// 	You are logged in!
+// 	</p>";
+// }
+// else {
+// 	echo "<p>
+// 	You are logged out!
+// 	</p>";
+// }
 
 ?>
-<br><br>
-<div id="cont_NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx"><div id="spa_NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx"><a id="a_NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx" href="http://www.meteocity.com/france/saint-etienne_v42218/" target="_blank" style="color:#333;text-decoration:none;">Météo Saint-Étienne</a> <a href="http://www.meteocity.com"></a></div><script type="text/javascript" src="http://widget.meteocity.com/js/NDIyMTh8NXwzfDN8MXxjNGM0Y2N8MXxGRkZGRkZ8Y3wx"></script></div>
+<style>
+	
+	#meteo{
+		background-color: blue;
+	}
+</style>
 
+<div id="meteo">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+    	<!-- carte meteo -->
+    	<div id="carte_9a4b1b57b2fb16fb348323f42073bf48">
+    		<a href="http://www.mymeteo.info/r/france_An" title="climat France">climat France</a>
+    		<script type="text/javascript">
+    			(function() {
+    				var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
+    				my.src = "https://services.my-meteo.com/cartes/js?pays=france&periode=24&x=450&y=430&d=0&id=9a4b1b57b2fb16fb348323f42073bf48";
+    				var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
+    			})();
+    		</script>
+    	</div>
+    	<!-- carte meteo -->
+
+    </div>
+
+	<div class="col-sm-5">
+		<!-- carte meteo -->
+		<div id="carte_51912a86e8326ece13e6cbd084dfad89">
+			<a href="http://www.mymeteo.info/r/france_An" title="www.my-meteo.com France"><img src="https://services.my-meteo.com/assets_webmaster/cartes/c.gif" alt="www.my-meteo.com France" height="1" width="1" /></a>
+			<script type="text/javascript">
+				(function() {
+					var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
+					my.src = "https://services.my-meteo.com/cartes/js?pays=france&periode=48&x=450&y=430&d=0&id=51912a86e8326ece13e6cbd084dfad89";
+					var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
+				})();
+			</script>
+		</div>
+		<!-- carte meteo -->
+    </div>
+
+    <div class="col-sm-2">
+    	<!-- widget meteo -->
+    	<div id="widget_47817a0286fee49e010708cdefd0ac98">
+    		<span id="l_47817a0286fee49e010708cdefd0ac98"><a href="http://www.mymeteo.info/r/saint-etienne_y">France Saint-&Eacute;tienne climat</a></span>
+    		<script type="text/javascript">
+    			(function() {
+    				var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
+    				my.src = "https://services.my-meteo.com/widget/js_design?ville=602&format=vertical&nb_jours=3&ombre1=000000&c1=ffffff&c2=a9a9a9&c3=ffffff&c4=ffffff&c5=ffffff&police=0&t_icones=2&fond=1&masque=3&x=160&y=442&d=0&id=47817a0286fee49e010708cdefd0ac98";
+    				var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
+    			})();
+    		</script>
+    	</div>
+    	<!-- widget meteo -->
+    </div>
+    
+  </div>
+</div>
+</div>
 	<!--- Image Slider -->
-<!-- 	<div id="slides" class="carousel slide col-12" data-ride="carousel">
+	<!-- <div id="slides" class="carousel slide col-12" data-ride="carousel">
 		<ul class="carousel-indicators">
 			<li data-target="#slides" data-slide-to="0" class="active"></li>
 			<li data-target="#slides" data-slide-to="1"></li>
@@ -136,7 +192,6 @@ else {
 
 	<?php
 
-	require "includes/footer.php";
+	require "footer.php";
 
 	 ?>
-

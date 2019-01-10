@@ -1,18 +1,23 @@
 
     <?php
 session_start();
-    require "includes/header.php"
+    require "header.php"
 
      ?>
      <br>
      <div class="wrapper">
        <?php
-
+       
        if (isset($_SESSION['userId'])) {
        	echo '<form action="includes/logout.inc.php" method="post">
           <button type="submit" name="logout-submit">Logout</button>
+          <a id="connect" href="index.php">&nbsp;<button class="btn btn-primary" type="submit" name="logout-submit">Logout</button>&nbsp;</a>
            </form>';
        }
+
+        
+
+
        else {
        	echo '<form action="includes/login.inc.php" method="post">
         <input type="text" name="mailuid" placeholder="Username/E-mail">
@@ -31,5 +36,6 @@ session_start();
 
      <?php
 
-     require "includes/footer.php";
+     require "footer.php";
       ?>
+
