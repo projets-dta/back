@@ -16,7 +16,7 @@ require "header.php";
 
 ?>
 <style>
-	
+
 	#meteo{
 		background-color: blue;
 	}
@@ -70,74 +70,70 @@ require "header.php";
     	</div>
     	<!-- widget meteo -->
     </div>
-    
+
   </div>
 </div>
 </div>
-	<!--- Image Slider -->
-	<!-- <div id="slides" class="carousel slide col-12" data-ride="carousel">
-		<ul class="carousel-indicators">
-			<li data-target="#slides" data-slide-to="0" class="active"></li>
-			<li data-target="#slides" data-slide-to="1"></li>
-			<li data-target="#slides" data-slide-to="2"></li>
-		</ul>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/w2.jpg">
-				<div class="carousel-caption">
-					<h1 class="display-2">Actu-Météo</h1>
-					<h3>This needs to be replaced</h3>
-					<button type="button" class="btn btn-outline-light btn-lg"><a href="login.php">Login</a></button>
-					<button type="button" class="btn btn-primary btn-lg" ><a href="signup.php">Signup</a></button>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img src="img/w8.jpg">
-			</div>
-			<div class="carousel-item">
-				<img src="img/w13.jpg">
-			</div>
-		</div>
-	</div> -->
-
-
 <!------Jumbotron------>
 
 	<!--- Welcome Section -->
 	<div class="container-fluid padding">
 		<div class="row welcome text-center">
 			<div class="col-12">
-				<h1 class="display-4">Built with Ease</h1>
+				<h1 class="display-4"> Vos photos!</h1>
 			</div>
 			<hr>
-			<div class="col-12">
-				<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-			</div>
+
 		</div>
 	</div>
+
+	<!--start of caro -->
+	<div id="slides" class="carousel slide col-12" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner" data-interval="10000">
+			<div class="carousel-item active">
+				<img src="img/w10.jpg">
+			</div>
+			<div class="carousel-item" data-interval="2000">
+				<img src="img/w12.jpg">
+			</div>
+			<div class="carousel-item">
+				<img src="img/w13.jpg">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	 <span class="sr-only">Previous</span>
+ </a>
+ <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	 <span class="sr-only">Next</span>
+ </a>
+	</div>
+	<!--end of caro -->
 
 	<!--- Three Column Section -->
 
 	<div class="container-fluid padding">
 		<div class="row text-center padding">
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<i class="fas fa-code"></i>
-				<h3>html5</h3>
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the
-					master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,</p>
+				<img src="img/pr1.png">
+				<h3>Plus que jamais</h3>
+				<p>"Plus que jamais, vous avez besoin de bonne fortune en hiver. Que vous ayez une journée ensoleillée, une vue dégagée, une bataille de neige amusante, que vous ayez une bonne soupe quand vous avez froid ou que vous soyez là quand il neige, c’est si facile de se sentir chanceux en hiver."</p>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<i class="fas fa-bold"></i>
-				<h3>html5</h3>
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the
-					master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,</p>
+				<img src="img/rp2.png">
+				<h3>Chance</h3>
+				<p>"Que vous conduisiez sur des autoroutes ou non, conduire une motoneige sur des champs de neige est réalisable et facile à apprendre. Vous sentirez le vent de l’aventure lorsque vous regarderez devant vous et que vous attraperez dans votre rétroviseur une image en mouvement de la neige que vous n’oublierez pas de si tôt."</p>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<i class="fab fa-css3"></i>
-				<h3>html5</h3>
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the
-					master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,</p>
+				<img src="img/rp3.jpg">
+				<h3>L'occasion de câliner</h3>
+				<p>"Il n'y a pas de meilleure saison pour s'embrasser. Même si vous voyagez seul, la chaleur du chocolat, du café et d'une couverture crée une concurrence féroce pour l'été."</p>
 			</div>
 		</div>
 		<hr class="my-4">
@@ -147,12 +143,11 @@ require "header.php";
 	<div class="container-fluid padding">
 		<div class="row padding">
 			<div class="col-md-12 col-lg-6">
-				<h2>if you build it...</h2>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+				<h2>La neige arrive par l'Est</h2>
+				<p>Les plaisirs de la neige enfin retrouvés. 20 cm de neige sont tombés en une nuit à Morbier (Jura). Dans la station de ski, c'est le soulagement. Ces deux enfants participent à leur premier cours de ski. Pour ces fondeurs, pas de répit. C'est la reprise de l'entraînement : 15 km de course sur une neige idéale.</p>
+				<p>Les mêmes espoirs sont en tête à la station de Saint-Pierre-de-Chartreuse (Isère), dans les Alpes. Sur les 28 pistes, seulement sept sont ouvertes. Alors, Robert et Gérald profitent de ce cadeau tombé du ciel. Une aubaine pour la station, qui avait dû compenser ce manque de flocons par des tarifs adaptés. La station d'Orbey (Haut-Rhin), dans les Vosges, a elle aussi ouvert tardivement. Malgré les 60 cm de poudreuse à certains endroits, il faut encore l'aide des canons à neige pour faire tenir les pistes. Avec des chutes de neige prévues jusqu'à la fin de la semaine, la station a prévu d'ouvrir rapidement toutes ses pistes.</p>
 				<br>
-				<a href="#" class="btn btn-primary">Learn More</a>
+				<a href="#" class="btn btn-primary">En Savoir +</a>
 			</div>
 			<div class="col-lg-6">
 				<img src="img/w13.jpg" class="img-fluid">
@@ -187,8 +182,8 @@ require "header.php";
 				<a href="#"><i class="fab fa-youtube"></i></a>
 			</div>
 		</div>
-
 	</div>
+
 
 	<?php
 

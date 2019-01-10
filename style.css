@@ -10,7 +10,9 @@ html, body{
 .navbar{
   padding: .8rem;
 }
-
+.navbar.navbar-brand{
+  color: #6648b1;
+}
 .navbar-nav li{
   padding-right: 2px;
 }
@@ -25,10 +27,12 @@ html, body{
 
 .container-fluid{
 
-align-content: center;
+align-content: ;
 }
 
-
+.carousel-item{
+  height: 550px;
+}
 
 .carousel-inner img{
   width: 100%;
@@ -200,7 +204,7 @@ figure {
 }
 
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url('img/w14.jpg');
   position: fixed;
   display: block;
   top: 0;

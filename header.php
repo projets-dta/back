@@ -17,7 +17,7 @@
 <body>
 	<!-- Navigation -->
 	<header>
-		
+
 
 <?php
 session_start();
@@ -26,7 +26,7 @@ session_start();
      <br>
      <div class="wrapper">
        <?php
-       
+
        if (isset($_SESSION['userId'])) {
        	echo '<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<a class="navbar-brand" href="http://localhost/back"><i class="far fa-list-alt"></i> Meteor</a>
@@ -43,12 +43,12 @@ session_start();
 						<a class="nav-link" href="#meteo">Meteo <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#services">Services</a>
+						<a class="nav-link" href="about.php">Services</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">contact</a>
 					</li>
-					
+
 					<li>
 						<form action="includes/logout.inc.php" method="post">
 							<a id="connect" href="index.php">&nbsp;<button class="btn btn-primary" type="submit" name="logout-submit">Déconnexion</button>&nbsp;</a>
@@ -71,14 +71,14 @@ session_start();
 		</nav>';
        }
 
-        
+
 
 
        else {
        	echo '<!-- --------------------------------------------------------------------- Navbar de connexion ------------------------------------------------------------------------------ -->
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="http://localhost/back"><i class="far fa-list-alt"></i> Meteor</a>
+			<a class="navbar-brand" href="http://localhost/back"><i class="far fa-list-alt"></i> Actu-Météo</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -116,7 +116,7 @@ session_start();
 			<div class="container">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
-						<div class="modal-header text-white" style="background-color: #5F382C">
+						<div class="modal-header text-white" style="background-color: #563d7c">
 							<h5 class="modal-title" id="exampleModalLabel"><strong></strong>Connectez-vous à votre compte Meteor</strong></h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
@@ -154,7 +154,7 @@ session_start();
 <div class="modal fade" id="inscription" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<div class="modal-header text-white" style="background-color: #5F382C">
+			<div class="modal-header text-white" style="background-color: #563d7c">
 				<h5 class="modal-title" id="exampleModalLabel">Inscrivez-vous et ouvrez un compte Meteor</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -212,7 +212,7 @@ session_start();
       ?>
 
 <a href="index.php"></a>
-				
+
 
 
 <br><br><br>
