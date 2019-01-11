@@ -29,7 +29,7 @@ session_start();
 
        if (isset($_SESSION['userId'])) {
        	echo '<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="http://localhost/back"><i class="far fa-list-alt"></i> Meteor</a>
+			<a class="navbar-brand" href="http://localhost/back"><i class="far fa-list-alt"></i> Actu-Météo</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -68,7 +68,43 @@ session_start();
 					</li>
 				</ul>
 			</div>
-		</nav>';
+		</nav>
+
+		<div class="jumbotron jumbotron-fluid">
+		  <div class="container">
+
+		  	<div class="row">
+		  	<div class="col-sm-6">
+
+
+		  		<link type="text/css" href="jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet" /> 
+				<form action="autocomplete.php" method="post"> 
+					<p>VOTRE COMMUNE :</p>
+					<p id="box"><input type="text" id="ville_nom" name="ville_nom" /></p> 
+					<p><input type="submit" /></p> 
+				</form>
+
+				<!-- en bas de la page HTML, juste avant </body> --> 
+				<script type="application/javascript" src="jquery-ui/js/jquery-1.9.1.js"></script> 
+				<script type="application/javascript" src="jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+
+				<script type="application/javascript"> 
+					$(function(){  
+						$("#ville_nom").on(\'input\', function() { 
+							$("#ville_nom").autocomplete({source: \'autocomplete.php?req=\'+$("#ville_nom").val()}); 
+						}); 
+					});   
+				</script>
+			</div>
+			<div class="col-sm-6">
+			
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="178" id="gmap_canvas" src="https://maps.google.com/maps?q=t%C3%A9l%C3%A9com%20saint-etienne&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div><style>.mapouter{text-align:right;height:178px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:178px;width:600px;}</style></div>
+			</div>
+			</div>
+		  </div>
+		</div>
+
+		';
        }
 
 

@@ -1,7 +1,7 @@
 <?php
 $dbServer = "localhost";
 $dbUsername = "root";
-$dbPassword = "Dta2018!";
+$dbPassword = "password";
 $dbName = "dbmeteo";
 
 

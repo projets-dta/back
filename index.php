@@ -15,12 +15,13 @@ require "header.php";
 // }
 
 ?>
-<style>
 
-	#meteo{
-		background-color: blue;
+<style>
+	.map {
+		text-align: center;
 	}
 </style>
+
 
 <div id="meteo">
 <div class="container">
@@ -72,6 +73,18 @@ require "header.php";
     </div>
 
   </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row justify-content-sm-center">
+
+	<div class="col-sm-auto">
+
+  		<iframe src="https://www.meteoblue.com/en/weather/widget/three/paris_france_2988507?geoloc=fixed&nocurrent=0&noforecast=0&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 805px;height: 624px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/forecast/week/paris_france_2988507?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank"></a></div>
+  	</div>
+
+
+  </div>
 </div>
 </div>
 <!------Jumbotron------>
@@ -80,7 +93,7 @@ require "header.php";
 	<div class="container-fluid padding">
 		<div class="row welcome text-center">
 			<div class="col-12">
-				<h1 class="display-4"> Vos photos!</h1>
+				<h1 class="display-4"></h1>
 			</div>
 			<hr>
 
@@ -88,7 +101,12 @@ require "header.php";
 	</div>
 
 	<!--start of caro -->
-	<div id="slides" class="carousel slide col-12" data-ride="carousel">
+
+
+
+
+
+	<!-- <div id="slides" class="carousel slide col-12" data-ride="carousel">
 		<ul class="carousel-indicators">
 			<li data-target="#slides" data-slide-to="0" class="active"></li>
 			<li data-target="#slides" data-slide-to="1"></li>
@@ -113,7 +131,7 @@ require "header.php";
 	 <span class="carousel-control-next-icon" aria-hidden="true"></span>
 	 <span class="sr-only">Next</span>
  </a>
-	</div>
+	</div> -->
 	<!--end of caro -->
 
 	<!--- Three Column Section -->
